@@ -24,7 +24,9 @@ function unfinishedTasks() {
     }else {
         let final = '';
         for(let i=0; i<taskName.length; i++) {
-            final = final + `<div><p>${taskName[i]}</p></div>` + `<div><p>${taskDate[i]}</p></div>` + `<button class="delete-btn">Delete</button>`;
+            final = final + `<div><p>${taskName[i]}</p></div>` + `<div><p>${taskDate[i]}</p></div>` + `<button class="delete-btn" onclick="
+                taskName.splice(${i}, 1);
+                unfinishedTasks();>Delete</button>`;
         }
         document.querySelector('.tasks').innerHTML = final;
     }
