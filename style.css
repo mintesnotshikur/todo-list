@@ -1,0 +1,116 @@
+body {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: rgb(23, 42, 77);
+    padding: 5% 0 0 25%;
+    width: 50%;
+    background-color: rgb(59, 112, 114);
+}
+.container {
+    /* background-color: cadetblue; */
+    background-color: rgb(91, 192, 196);
+    padding: 5%;
+    border-radius: 50px;
+    box-shadow: 3px 3px 50px rgb(79, 193, 197);
+}
+.title {
+    text-align: center;
+    font-size: 45px;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    letter-spacing: 10px;
+    text-decoration: underline;
+}
+main {
+    display: flex;
+    flex-direction: row;
+}
+.add-btn {
+    /* color: rgb(75, 74, 74); */
+    color: rgba(240, 248, 255, 0.822);
+    padding: 3% 5%;
+    font-size: 18px;
+    /* background-color: yellowgreen; */
+    background-color: rgb(23, 42, 77);
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+::placeholder {
+    color: rgb(75, 74, 74);
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.name {
+    color: rgb(77, 76, 76);
+    width: 45%;
+    padding: 3%;
+    font-size: 20px;
+    border: none;
+    border-radius: 10px;
+    margin-right: 1%;
+    background-color: rgba(92, 138, 139, 0.493);
+}
+.date {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    background-color: rgba(92, 138, 139, 0.493);
+    color: rgb(75, 74, 74);
+    font-size: 18px;
+    padding: 3%;
+    border: none;
+    border-radius: 10px;
+    margin-right: 1%;
+}
+.container h2 {
+    cursor: pointer;
+    display: inline-block;
+}
+.tasks {
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr;
+    border-top: 10px solid;
+    padding: 4% 2%;
+}
+.tasks div {
+    font-size: 20px;
+    border-bottom: 2px solid rgb(23, 42, 77);
+    margin-right: 30px;
+    /* padding-top: 5%; */
+}
+.delete-btn {
+    color: rgb(226, 226, 226);
+    padding: 10% 0%;
+    margin-top: 5%;
+    margin-bottom: 5%;
+    font-size: 15px;
+    background-color: rgb(158, 40, 25);
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+
+@media screen and (max-width: 700px) {
+    body {
+        padding: 10% 8%;
+        margin: 0%;
+    }
+    .container {
+        padding: 20%;
+        width: 130%;
+    }
+    main {
+        display: flex;
+        flex-direction: column;
+    }
+    main input {
+        margin-bottom: 5%;
+    }
+    .name {
+        width: 89%;
+        padding: 5%;
+        font-size: 15px;
+    }
+    .date {
+        width: 89%;
+        padding: 5%;
+        font-size: 15px;
+    }
+}
