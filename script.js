@@ -19,7 +19,7 @@ function addTasks() {
     console.log(taskName, taskDate);
 }
 function unfinishedTasks() {
-    if(taskName.length === 0 && taskDate.length === 0) {
+    if(taskName.length === 0 || taskDate.length === 0) {
         document.querySelector('.unfinishedTasksIndicator').innerHTML = 'There is no unfinished tasks!';
     }else {
         let final = '';
