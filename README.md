@@ -1,1 +1,1 @@
-Preview -> https://mntua.github.io/todo-list/
+Preview -> https://mintesnotshikur.github.io/todo-list/
